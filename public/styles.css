@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700');
+
+body {
+	font-family: 'Roboto Slab';
+	background-color: #ecf0f1;
+	color: rgb(83, 72, 107);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	font-weight: 300;
+}
+
+header h1 span {
+	font-weight: 700;
+}
+
+header h2 {
+	font-weight: 300;
+	color: rgb(185, 178, 199);
+}
+
+ul {
+	margin-top: 15px;
+	width: 50%;
+}
+
+ul li {
+	margin: 15px 0;
+	font-size: 1.3rem;
+	padding: 5px 0;
+	transition: all 250ms;
+}
+
+ul li:hover {
+	background-color: rgba(36, 23, 66, 0.08);
+}
+
+ul li span {
+	opacity: 0;
+	float: right;
+	color: red;
+	transition: opacity 250ms;
+	padding-right: 15px;
+}
+
+.task:hover span {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: #bdc3c7;
+}
+
+input {
+	font-size: 2.2rem;
+	font-family: 'Roboto Slab';
+	color: rgba(85, 76, 107, 0.8);
+	margin-top: 50px;
+	padding: 10px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgb(199, 189, 226);
+	width: 50%;
+	outline: none;
+	transition: border-bottom 300ms;
+}
+
+input:focus {
+	border-bottom: 1px solid rgb(54, 40, 87);
+}
+
+::-webkit-input-placeholder {
+	color:rgb(199, 189, 226);
+}
